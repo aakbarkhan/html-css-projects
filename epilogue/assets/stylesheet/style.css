@@ -1,0 +1,255 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*  CSS custom */
+/* My Reset*/
+html {
+	font-size: 16px;
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: 400;
+  }
+  
+  h1 {
+	font-size: 3rem;
+	font-weight: 700;
+  }
+  h2 {
+	font-size: 2.5rem;
+	font-weight: 700;
+  }
+  h3 {
+	font-size: 2rem;
+	font-weight: 700;
+  }
+  h4 {
+	font-size: 1.5rem;
+	font-weight: 700;
+  }
+  h5 {
+	font-size: 1rem;
+	font-weight: 700;
+  }
+  h6 {
+	font-size: 0.75rem;
+	font-weight: 700;
+  }
+  p {
+	font-size: 1rem;
+  }
+  h1,  h2,  h3,  h4,  h5,  h6,  p {
+	line-height: 1.5;
+  }
+  *,
+  *::before,
+  *::after {
+	box-sizing: border-box;
+  }
+  a {
+	text-decoration: none;
+	display: inline-block;
+  }
+
+  /* general css */
+body {	
+	background-image:url(../media/banner.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+
+}
+/* heading */
+.head {
+	display: flex;
+	justify-content: center;
+	font-family: "Pacifico", cursive;
+}
+.heading {
+	color:white;
+	text-align: center;
+	padding: 6rem 0;
+	letter-spacing: .5rem;
+}
+h1 {
+	font-size:4rem;
+	letter-spacing: 1px;
+}
+a {
+	color: white;
+	border-bottom: dotted 1px;
+}
+.template {
+	font-family: sans-serif;
+	margin-top: 1rem;
+	border-width: 2px;
+	border-top-style: solid;
+	border-top-color: aliceblue;
+	padding-top: 2rem;
+	margin-bottom: 2rem;
+
+}
+/* main body */
+.feature {
+	background: #e2dddd;
+	padding: 2em 0;
+}
+.main-body{
+	background: #e2dddd;
+}
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+	width: 100%;
+	padding: 0 1rem;
+}
+.body-discription {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	background-color: #fff;
+}
+.size {
+	font-size: 3.5rem;
+	margin: 2rem 0 1.5rem 0;
+	border: 3px solid rgb(85, 83, 83);
+	padding: 1.3rem;
+	border-radius: 50%;
+	color: rgb(150, 140, 140); 
+}
+.title {
+	font-size: 1.75rem;
+	font-weight: 400;
+    line-height: 1.5;
+    margin: 0 0 1em 0;
+    text-transform: uppercase;
+	letter-spacing: 0.375rem;
+	color: #444444;
+}
+.discrption {
+	text-align: center;
+	color: #aca9a9;
+	/* flex-wrap: wrap; */
+	/* padding: 1rem 10rem 0 15rem; */
+	letter-spacing: 0.1rem;
+	font-size: 0.8rem;
+	margin-bottom: 1.5rem;	
+}
+.action {
+	font-size: 0.8em;
+    padding: 0 2.5em 0 2.875em;
+    height: 3.75em;
+	line-height: 3.75em;
+	background-color: transparent;
+    margin: 0 auto;
+	display: block;
+	margin-bottom: 4rem;
+
+
+}
+.action:hover {
+	color: red;
+}
+/*  more photos sec*/
+.photo {
+	height:100%;;
+	width: 100%;
+}
+.more-title {
+	display: flex;
+	background: #E2DCDC;
+	justify-content: space-between;		
+	flex-wrap: wrap;
+}
+.first-title { 
+	text-align: center;
+	width: 48%;
+	background: white;
+	margin: 1rem 0;
+}
+.reading {
+	text-align: center;
+	color: #aca9a9;
+	padding: 3rem 1rem;
+	letter-spacing: .1rem;
+	font-size: .8rem;
+	margin-bottom: 1.5rem;
+	line-height: 1.5rem;
+
+}
+.btn {
+	border-radius: 10px;
+}
+/* footer */
+.footer {
+	background: #e2dddd;
+	text-align: center;
+	
+}
+.info {
+	text-align: center;
+	color: #aca9a9;
+}
+.social-media {
+	padding: 2rem 0;
+	
+}
+.social-media i {
+	color: #7a7575;
+	padding: .5rem;
+	
+}
+small {
+	color: rgb(192, 182, 182);
+	display: inline-block;
+	margin: 1rem 0;
+}
+
+@media all and (max-width: 768px) {
+	.first-title {
+		width: 100%;
+	}
+}
