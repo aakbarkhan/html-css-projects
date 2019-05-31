@@ -1,0 +1,145 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* custom css */
+.heading {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	
+}
+a {
+	padding-left:  10px;
+	text-decoration: none;
+	
+}
+.hero {
+	padding: 20% 0;
+	background-image: url(../media/banner.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	text-align: center;
+}
+h2,p,button,h3 {
+	color: white;
+}
+h2 {
+	font-size: 50px;
+}
+p {
+	font-size: 20px;
+	padding: 30px 0;
+}
+button {
+	width: 180px;
+	height: 70px;
+	background: transparent;
+	border: 2px solid white;
+	border-radius: 10px;
+}
+.background-body {
+	background: rgb(62, 153, 62);
+	text-align: center;
+}
+h3 {
+	font-size: 32px;
+	padding-top: 100px;
+	
+}
+.wrapper {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+i {
+	font-size: 60px;
+	color: white;
+	border: 1px solid white;
+	padding: 20px;
+	border-radius: 50%;
+}
+.flex-box {
+	width: 30%;
+	text-align: center;
+	padding: 40px 0;
+	
+	
+}
+@media all and (max-width:768px){
+	.flex-box {
+		width:100%;
+		
+	}
+}
+.title {
+	font-size: 32px;
+	color: rgb(97, 100, 100);
+	text-align: center;
+}
+.disc {
+	font-size: 20px;
+	color: rgb(97, 100, 100);
+	text-align: center;
+}
+img {
+	height: 100%;
+	width: 100%;
+}
+.box {
+	width: 48%;
+}
+@media all and (max-width:768px){
+	.box {
+		width:100%;
+	}
+}
