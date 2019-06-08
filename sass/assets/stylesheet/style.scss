@@ -1,0 +1,171 @@
+@import "../stylesheet/reset.scss";
+
+* {
+    box-sizing: border-box;
+}
+$yellow:#ffff00;
+$white:white;
+$color0:rgb(145, 145, 196);
+$color1: rgb(150, 160, 160);
+$color2:rgb(120, 128, 128);
+$btn: rgb(75, 34, 7);
+$color3: rgb(106, 116, 112);
+$color4:black;
+@mixin border-radius($radius:10px) {
+    border-radius: $radius;
+}
+@mixin text-align($align:center) {
+    text-align: $align;
+}
+
+body {
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: 400;
+    
+}
+
+.heading {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-image: url(../media/banner.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    padding: 10% 0;
+    
+}
+.head {
+    font-size: 40px;
+    padding-left: 34px;
+}
+button {
+    background: $yellow;
+    height: 40px;
+    width: 100px;
+    @include border-radius;
+    border: none;
+}
+a {
+    text-decoration: none;
+    color:$white;
+    padding: 0 10px;
+}
+@media all and (max-width:768px){
+    .heading {
+        grid-template-columns: 1fr;
+    }
+}
+// hero
+.hero {
+    background-image: url(../media/banner.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include text-align;
+    position: relative; 
+    .text{background-color: rgba(0,0,0,0.7);padding: 70px 0;}   
+}
+h1,p{
+    color: $white;
+}
+h1 {
+    font-size: 55px;
+}
+p{
+    font-size:27px;
+    line-height: 2.5;
+    
+}
+.hero-button {
+    height: 60px;
+    width: 200px;
+    font-size: 18px;
+    margin: 65px 0;
+}
+.hero-button:hover{
+    color: $color0;
+}
+// more-info
+
+.info-section {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 0 30px;
+    margin-bottom: 30px;
+}
+.discription {
+    @include text-align;
+    
+}
+.info-title {
+    font-size: 40px;
+    @include text-align;
+    margin-top:60px;
+}
+.info {
+    color:$color1;
+    @include text-align;
+    font-size: 18px;
+    margin-bottom: 60px;
+}
+.more-info {
+    color: $color2 ;
+    font-size: 15px;
+    line-height: 1.6;
+}
+.btn {
+    color:$btn;
+    width: 150px;
+}
+@media all and (max-width:768px){
+    .info-section {
+        grid-template-columns: 1fr;
+    }
+}
+// last-section
+.last-section {
+    background:$yellow;
+    @include text-align;
+    img{
+        width: 70%;
+        height: 100%;
+   }
+   .greek{
+    padding: 60px 0 0 0;
+}
+.info-more {
+    margin-bottom: 0px;
+}
+}
+.add-info {
+    margin: 0 auto;
+    max-width: 70%;
+    @include text-align;
+    .where {    
+        font-size: 13px;
+        line-height: 1.5;
+        margin-top: 25px;
+        color:$color3;
+        letter-spacing: .5px;
+        a{text-decoration: underline;padding:  0;}
+    }
+    .btn-btn {
+        background:$white;
+    }
+}
+@media all and (max-width:768px){
+    .last-section {
+        width: 100%;
+    }
+}
+// footer
+.foot {
+    @include text-align;
+    background: $color4;
+    padding: 50px;
+    small{
+        color:$white;
+        a{ text-decoration: none;padding:0;color:$color3;}
+    }
+}

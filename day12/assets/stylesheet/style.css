@@ -1,5 +1,280 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+ * {
+    box-sizing: border-box;
+}
+/* custom css */
+h1 {
+    font-size: 36px;
+    color: rgb(163, 166, 168);
+}
+p {
+    font-size: 15px;
+    padding: 20px 10px;
+    color: rgb(180, 176, 176);
+}
+strong {
+    font-size: 50px;
+}
 header {
     display: grid;
-    grid-gap: 10px;
     grid-template-columns: repeat(2,1fr);
+    text-align: center;
+    padding: 0 10px;
 }
+a {
+    text-decoration: none;
+    color: gray;
+    
+}
+nav:hover {
+    color: rgb(240, 178, 98);
+}
+a:hover {
+    color: rgb(240, 178, 98);
+}
+.name {
+    color: rgb(196, 110, 41);
+}
+/* first-section */
+
+.first-section {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+      
+}
+img {
+    width: 100%;
+    height: 100vh;
+}
+.first-intro {
+    background: rgb(226, 135, 74);
+    text-align: start;
+    padding: 20% 0 20% 40px; 
+}
+button{
+    height: 50px;
+    width: 150px;
+    border-radius: 28px;
+    background: transparent;
+    border: 2px solid black;
+}
+button:hover{
+    color: aqua;
+}
+@media all and (max-width:768px){
+    .first-section{
+        grid-template-columns: 1fr;
+    }
+}
+/* second-section */
+.second-section {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+}
+.second-discription {
+    grid-column: span 2;
+    padding: 20px 20px;
+}
+h2 {
+    font-size: 30px;
+    padding: 0 10px;
+}
+.second-img {
+    width: 100%;
+    height: 300px;;
+}
+.second-experience {
+    padding: 20px 20px;
+}
+@media all and (max-width:786px){
+    .second-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* third-section */
+.third-section {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+
+}
+
+i {
+    font-size: 30px;
+    color:rgb(255, 255, 255);
+    padding: 10px 0;
+    
+}
+.third {
+    text-align: center;
+    color: white;
+    background: rgb(228, 167, 55);
+}
+.second-it {
+    background: rgb(228, 83, 39);
+}
+.third-it {
+    background: black;
+}
+.fourth-it {
+    background: white;
+}
+@media all and (max-width:786px){
+    .third-section {
+        grid-template-columns: 1fr;
+    }
+}
+/* fourth-section */
+.fourth-section {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+    
+}
+.experiance {
+    padding-left: 50px;
+    padding-top: 25%;
+    background:  rgb(228, 83, 39);
+}
+.education {
+    background: rgb(224, 105, 58);
+}
+@media all and (max-width:786px){
+    .fourth-section {
+        grid-template-columns: 1fr;
+        
+    }
+}
+/* contact */
+.contect {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+    
+}
+.mail-section {
+    grid-column: span 2;
+    background:  rgb(228, 83, 39);
+    padding: 20px 10px;
+}
+input {
+    width: 100%;
+    background:rgb(228, 83, 39);
+    padding: 10px 0;
+    border: transparent;
+    border-bottom: 1px solid yellow;
+}
+.mail-button {
+    background: white;
+    border: transparent;
+    width:200px;
+    height: 30px;
+}
+textarea {
+    width: 100%;
+    background:  rgb(228, 83, 39);
+    border: transparent;
+    border-bottom: 1px solid yellow;
+}
+
+.my-office {
+    background: black;
+    padding: 20px 10px;
+}
+h3 {
+    color: white;
+}
+.my-time {
+    color: white;
+}
+.my {
+    font-size: 15px;
+}
+@media all and (max-width:786px){
+    .contect {
+        grid-template-columns: 1fr;
+    }
+    
+}
+/* map */
+.map {
+    display: grid;
+    grid-template-columns:1fr;
+    text-align: center;
+    background:  rgb(228, 83, 39);
+    padding: 10px 0; 
+
+}
+@media all and (max-width:786px){
+    .map {
+        grid-template-columns: 1fr;
+    }
+}
+/* footer */
+footer{
+    max-width: 100%;
+    text-align: center;
+    padding: 5% 0;
+}
+.footer {
+    color: rgb(107, 101, 101);
+    font-size: 20px;
+    padding: 20px 20px;
+
+}
+@media all and (max-width:786px){
+    .footer {
+        grid-template-columns: 1fr;
+    }
+}
+
+
