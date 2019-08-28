@@ -261,8 +261,8 @@ tr:nth-child(odd) {
 small {
     font-size: 13px;
 }
-/* media-queries. */
-/* @media all and (max-width:768px) {
+media-queries.
+@media all and (max-width:768px) {
     .header {
         width: 100%;
         margin: 0;
@@ -282,4 +282,4 @@ small {
         /* [class*="col-"] {
           width: 100%;
         }
-    } */
+    }
